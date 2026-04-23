@@ -35,7 +35,7 @@ Attempt transcript retrieval in this priority order:
   - Any shared files during the meeting
 
 **Method C — WorkIQ:**
-- Use WorkIQ: `/Users/bendali/.copilot/bin/workiq ask -q "Get the transcript or summary for the meeting '[meeting subject]' on [date]"`.
+- Use WorkIQ: `/Users/[username]/.copilot/bin/workiq ask -q "Get the transcript or summary for the meeting '[meeting subject]' on [date]"`.
 
 **Method D — Browser Automation (fallback):**
 - If Methods A-C fail, use Playwright browser to:
@@ -71,7 +71,7 @@ If transcript is in another format (DOCX, text, HTML):
 
 - Check if a meeting-prep file exists at:
   ```
-  /Users/bendali/OneDrive - Microsoft/ClawPilot/meeting-preps/[customer-company-name]/
+  /Users/[username]/OneDrive - Microsoft/ClawPilot/meeting-preps/[customer-company-name]/
   ```
 - Search for the most recent prep file matching the meeting subject.
 - If found, read it and compare:
@@ -219,14 +219,14 @@ Present the following structured summary in chat:
 Save the same content as a markdown file to:
 
 ```
-/Users/bendali/OneDrive - Microsoft/ClawPilot/meeting-summaries/[Customer-Company-Name]/[Customer-Company-Name]-[meeting-subject]-YYYY-MM-DD-HHMM.md
+/Users/[username]/OneDrive - Microsoft/ClawPilot/meeting-summaries/[Customer-Company-Name]/[Customer-Company-Name]-[meeting-subject]-YYYY-MM-DD-HHMM.md
 ```
 
 Rules:
 - Create the customer company folder if it doesn't exist (`mkdir -p`).
 - For **internal meetings**, use folder name `microsoft-internal`.
 - **Sanitize** file and folder names: replace spaces with hyphens, remove special characters, use lowercase.
-- Example: `check-point/check-point-fwaas-bi-weekly-2026-04-27-0900.md`
+- Example: `stark-industries/stark-jericho-project-bi-weekly-2026-04-27-0900.md`
 - Confirm the file was saved and show the full path.
 
 #### C) Offer Distribution

@@ -91,10 +91,17 @@ Scan the user's Teams chats and Outlook inbox (past 30 days), extract action ite
 **A) Group by Customer/Internal:**
 - **Internal (Microsoft)**: all items where sender/participants are `@microsoft.com` only
 - **Customer groups**: group by company name extracted from email domain. Map known domains:
-  - `@checkpoint.com`, `@checkpoint.co.il` → Check Point
-  - `@verint.com` → Verint
-  - `@playtech.com` → Playtech
-  - `@solaredge.com` → SolarEdge
+  - `@alphacompany.com`, `@alphacompany.co.il` → Alpha Company
+  - `@fabrikam.com`, `@fabrikam.org` → Fabrikam
+  - `@contoso.com` → Contoso
+  - `@adventureworks.com` → Adventure Works
+  - `@umbrella.com` → Umbrella Corp
+  - `@starkindustries.com` → Stark Industries
+  - `@wayneenterprises.com` → Wayne Enterprises
+  - `@acme.com` → Acme Corporation
+  - `@cyberdyne.com` → Cyberdyne Systems
+  - `@wonka.com` → Wonka Industries
+  - `@prestige.com` → Prestige Worldwide
   - Other external domains → use the domain name as the group label (capitalize, strip TLD)
 
 **B) Deduplicate:**

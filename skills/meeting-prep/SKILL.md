@@ -19,7 +19,7 @@
 - Check all attendee email domains.
 - If **ALL** attendees are `@microsoft.com` → **Internal meeting** (lighter prep: skip Steps 6 and 7).
 - If **any** attendee has a non-Microsoft domain → **Customer meeting** (full prep).
-- Identify the **customer company name** from the external attendee email domains (e.g., `@checkpoint.com` → "Check Point").
+- Identify the **customer company name** from the external attendee email domains (e.g., `@starkindustries.com` → "Stark Industries").
 - If multiple external companies are present, use the most prominent one (most attendees) as the primary company name.
 
 ### Step 3 — Attendee Intelligence
@@ -215,7 +215,7 @@ Present the following structured summary in chat:
 Save the same content as a markdown file to:
 
 ```
-/Users/bendali/OneDrive - Microsoft/ClawPilot/meeting-preps/[Customer-Company-Name]/[Customer-Company-Name]-[meeting-subject]-YYYY-MM-DD-HHMM.md
+/Users/[username]/OneDrive - Microsoft/ClawPilot/meeting-preps/[Customer-Company-Name]/[Customer-Company-Name]-[meeting-subject]-YYYY-MM-DD-HHMM.md
 ```
 
 Rules:

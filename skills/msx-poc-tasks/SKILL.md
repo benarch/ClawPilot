@@ -15,12 +15,13 @@ You are automating MSX (Microsoft Sales Dynamics 365) to create POC task activit
 
 ## TARGET ACCOUNTS FILTER
 Only process opportunities belonging to these accounts (match by account name in the "Account" column):
-1. CHECK POINT SOFTWARE TECHNOLOGIES LTD
-2. VERINT SYSTEMS LTD (COMVERSE INFOSYS)
-3. Playtech Software Limited
-4. SOLAREDGE TECHNOLOGIES
+1. Alpha Company
+2. Umbrella Corp
+3. Stark Industries
+4. Wayne Enterprises
+5. Willy Wonka
 
-Use case-insensitive partial matching — e.g., "Check Point" matches "CHECK POINT SOFTWARE TECHNOLOGIES LTD". Skip any opportunity whose account is NOT in this list.
+Use case-insensitive partial matching — e.g., "Umbrella Corp" matches "UMBRELLA CORP". Skip any opportunity whose account is NOT in this list.
 
 ## WORKFLOW
 
@@ -52,9 +53,9 @@ After scanning all opportunities, **STOP and present a single numbered table** o
 
 | # | Opportunity Name | Account | Milestone Name |
 |---|---|---|---|
-| 1 | Opp A | Check Point ... | Milestone X |
-| 2 | Opp A | Check Point ... | Milestone Y |
-| 3 | Opp B | Verint ... | Milestone Z |
+| 1 | Opp A | Umbrella Corp ... | Milestone X |
+| 2 | Opp A | Umbrella Corp ... | Milestone Y |
+| 3 | Opp B | Wayne ... | Milestone Z |
 | ... | ... | ... | ... |
 
 Ask the user: "Here are all the milestones I found. Which ones should I create POC tasks for? Reply 'all' to proceed with all, or list the numbers (e.g., '1, 3, 5') to select specific milestones."

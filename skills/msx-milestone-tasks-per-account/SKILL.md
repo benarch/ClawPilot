@@ -8,13 +8,16 @@ description: "Create POC task activities on MSX milestones for deal team opportu
 ### PURPOSE
 Scan the user's MSX Deal Team opportunities filtered by specific accounts, discover all milestones via Dynamics 365 Web API, present a numbered approval table, then create 3 POC task activities on each approved milestone.
 
+NOTE: Requires VPN Connection and authenticated session in Edge browser.
+
 ---
 
 ### TARGET ACCOUNTS (default list — user can override)
-- CHECK POINT SOFTWARE TECHNOLOGIES LTD
-- VERINT SYSTEMS LTD (COMVERSE INFOSYS)
-- Playtech Software Limited
-- SOLAREDGE TECHNOLOGIES
+- Alpha Company
+- Umbrella Corp
+- Stark Industries
+- Wayne Enterprises
+- Willy Wonka
 
 Ask the user if they want to use this default list or provide different accounts.
 

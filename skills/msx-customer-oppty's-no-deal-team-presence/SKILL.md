@@ -1,6 +1,6 @@
 ---
 name: "msx-customer-oppty's-no-deal-team-presence"
-description: "Scans MSX opportunities for target accounts (Check Point, Verint, Playtech, SolarEdge) and lists all open opportunities where the user is NOT on the Deal Team. Returns a numbered table for action."
+description: "Scans MSX opportunities for target accounts (Alpha Company, Umbrella Corp, Stark Industries, Wayne Ent., Wonka) and lists all open opportunities where the user is NOT on the Deal Team. Returns a numbered table for action."
 ---
 
 ## MSX Customer Opportunities — No Deal Team Presence
@@ -8,15 +8,18 @@ description: "Scans MSX opportunities for target accounts (Check Point, Verint, 
 ### PURPOSE
 Query MSX Dynamics 365 to find ALL open opportunities for target customer accounts where the current user is **NOT** listed on the Deal Team. Present a numbered table so the user can take action by referencing opportunity numbers.
 
+NOTE: Requires VPN Connection and authenticated session in Edge browser.
+
 ---
 
 ### TARGET ACCOUNTS (default list — user can override)
-- CHECK POINT SOFTWARE TECHNOLOGIES LTD
-- VERINT SYSTEMS LTD (COMVERSE INFOSYS)
-- Playtech Software Limited
-- SOLAREDGE TECHNOLOGIES
+- Alpha Company
+- Umbrella Corp
+- Stark Industries
+- Wayne Enterprises
+- Willy Wonka
 
-The account filter uses partial matching (LIKE %name%) so it catches sub-entities (e.g., "Playtech Limited", "Playtech Holding Sweden AB", "SOLAREDGE E-MOBILITY SRL", "Verint Netherlands", "Check Point", etc.).
+The account filter uses partial matching (LIKE %name%) so it catches sub-entities (e.g., "Alpha Company", "Alpha comp", "Wayne corp", "Umbrella Netherlands", "Alphe Company", etc.).
 
 ---
 
@@ -52,10 +55,10 @@ async () => {
       </filter>
       <link-entity name="account" from="accountid" to="parentaccountid" alias="acct">
         <filter type="or">
-          <condition attribute="name" operator="like" value="%CHECK POINT%" />
-          <condition attribute="name" operator="like" value="%VERINT%" />
-          <condition attribute="name" operator="like" value="%Playtech%" />
-          <condition attribute="name" operator="like" value="%SOLAREDGE%" />
+          <condition attribute="name" operator="like" value="%STASK INDUSTRIES%" />
+          <condition attribute="name" operator="like" value="%WAYNE ENTERPRISES%" />
+          <condition attribute="name" operator="like" value="%UMBRELLA CORPORATION%" />
+          <condition attribute="name" operator="like" value="%WONKA%" />
         </filter>
       </link-entity>
     </entity>
@@ -85,10 +88,10 @@ async () => {
       </filter>
       <link-entity name="account" from="accountid" to="parentaccountid" alias="acct">
         <filter type="or">
-          <condition attribute="name" operator="like" value="%CHECK POINT%" />
-          <condition attribute="name" operator="like" value="%VERINT%" />
-          <condition attribute="name" operator="like" value="%Playtech%" />
-          <condition attribute="name" operator="like" value="%SOLAREDGE%" />
+          <condition attribute="name" operator="like" value="%STASK INDUSTRIES%" />
+          <condition attribute="name" operator="like" value="%WAYNE ENTERPRISES%" />
+          <condition attribute="name" operator="like" value="%UMBRELLA CORPORATION%" />
+          <condition attribute="name" operator="like" value="%WONKA%" />
         </filter>
       </link-entity>
       <link-entity name="team" to="opportunityid" from="regardingobjectid" alias="tm">
