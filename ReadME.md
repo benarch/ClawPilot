@@ -89,4 +89,3 @@ Switch language models mid-conversation. Supported models include Claude Opus 4.
 ## Links
 
 - **Microsoft Official Repo:** [github.com/microsoft/openclaw](https://github.com/microsoft/openclaw)
-- **Releases (Internal Only):** [github.com/gim-home/m/releases](https://github.com/gim-home/m/releases)
