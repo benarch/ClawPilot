@@ -31,7 +31,7 @@ Only ask questions about **gaps you cannot reasonably fill with defaults**. Use 
 **Common gaps to check:**
 - If outputs include saving files → ask for destination folder (suggest: `/Users/bendali/OneDrive - Microsoft/ClawPilot/[skill-name]/`)
 - If the skill involves a specific website → ask for the exact URL and key navigation paths
-- If the skill involves specific accounts/filters → ask for the default list (mention user's known accounts: Check Point, Verint, Playtech, SolarEdge if relevant)
+- If the skill involves specific accounts/filters → ask for the default list (mention user's known accounts: Stark Industries, Wonka, Umbrella Corp if relevant)
 - If the skill has conditional branches → confirm which branches matter
 
 **Do NOT ask about:**
